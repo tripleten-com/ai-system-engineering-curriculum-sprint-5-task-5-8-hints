@@ -44,19 +44,19 @@ Four ideas keep the comparison honest:
 
 ### You can't pick the moments to compare
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Read the approval script `poe demo` plays. Which proposals matter most to the dispatcher?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Each moment needs a baseline: which script and which position stand for it?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Pick three to five moments, such as the proposal of the review, the finish, and perhaps a second try from your recovery script, and name each request.
 
@@ -64,25 +64,25 @@ Pick three to five moments, such as the proposal of the review, the finish, and 
 
 ### Every hosted answer comes back malformed
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Print one raw answer. Is it a single JSON object, or wrapped in other text?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Which fields does the contract require? Can a model know every one of them, such as its own token count?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Where does the response report usage?
 
 </details>
 
-<details><summary>Move 4</summary>
+<details><summary>Hint 4</summary>
 
 The approach: ask the model for the kind, the reason and, for a tool call, its input. Read the token count from the response's usage report and add it before the contract judges the answer.
 
@@ -90,19 +90,19 @@ The approach: ask the model for the kind, the reason and, for a tool call, its i
 
 ### The model proposes things your configuration doesn't allow
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Read the procedure text you sent. Does it contain an instruction the model could follow?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Is such an answer malformed, or well formed but asking for something outside your lists?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Check a parsed tool call's reason code and next step against your authority configuration, and give those answers their own outcome. Keep them: they're a finding for Step 4.
 
@@ -110,19 +110,19 @@ Check a parsed tool call's reason code and next step against your authority conf
 
 ### You're not sure how to give the script the key
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Where does the worker's provider key live, and how does the worker read it?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Can your key live in the same place under a name you choose?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Store the key in the local secret store under your chosen name, read it through the secret port in the script, and keep the name, never the value, for your worksheet.
 
@@ -130,25 +130,25 @@ Store the key in the local secret store under your chosen name, read it through 
 
 ### The script can't reach the endpoint
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Did the failure happen before the first call, or in the middle of the set?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Check the address and the model name against the lesson.
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Check that the key you read is the one you stored, by its version, never by printing it.
 
 </details>
 
-<details><summary>Move 4</summary>
+<details><summary>Hint 4</summary>
 
 If it still fails before the set starts, keep the message, check it holds no key, and continue with the emulator baseline. An unavailable endpoint is a result, not a failure of the Task.
 
@@ -156,19 +156,19 @@ If it still fails before the set starts, keep the message, check it holds no key
 
 ### Two answers look the same but tell the dispatcher different things
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Does your row compare only the kinds?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Read the reasons and tool inputs of two answers with the same kind. Would a dispatcher act the same way on both?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Keep the reason and the tool input in the rows you discuss, so the worksheet can say how answers with the same kind differ.
 
@@ -176,19 +176,19 @@ Keep the reason and the tool input in the rows you discuss, so the worksheet can
 
 ### The request sends personal data
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Which function does the worker run on text before it reaches the model?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 At which points does the worker call it? Read `src/worker/use_cases.py`.
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Run the same redaction at the same points before your request leaves your machine.
 

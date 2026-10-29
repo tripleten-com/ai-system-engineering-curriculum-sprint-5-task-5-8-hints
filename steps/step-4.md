@@ -34,19 +34,19 @@ You pick exactly one, the one that matches the behavior that would hurt the disp
 
 ### You're not sure what goes in each section
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Start with the record: what did you run, when, and was the endpoint up? A reader needs that before any number.
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 For variance and latency, read straight from your rows and summary line. Group the rows per request.
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Keep interpretation for the last two sections. The first three state what you observed.
 
@@ -54,19 +54,19 @@ Keep interpretation for the last two sections. The first three state what you ob
 
 ### None of the four options fits what you saw
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Which behavior would bother the dispatcher first: a run that ends with nothing, a long wait, a proposal that changes between runs, or one that asks for something outside the rules?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Read the description of each option again, including the cases the lesson says it fits.
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Tool calls that follow text in the retrieved procedure are expected, and the tool's checks already turn them down. Which option does the lesson match to that case?
 
@@ -74,19 +74,19 @@ Tool calls that follow text in the retrieved procedure are expected, and the too
 
 ### You can't say what the agent would do with a bad answer
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 The comparison never ran the graph. Which code decides what happens to an answer that doesn't fit the contract?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Which code decides what happens to a slow or missing answer?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 For each bad row, follow the answer through those two places and write the outcome: a named refusal, or a retry and then an error.
 
@@ -94,19 +94,19 @@ For each bad row, follow the answer through those two places and write the outco
 
 ### Your decision has no numbers behind it
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Could a reader reach the same option from your rows alone?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Which counts and which latency did you actually use?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Name them in the decision, beside the option, its cost, and the evidence that would prove it.
 
@@ -114,19 +114,19 @@ Name them in the decision, beside the option, its cost, and the evidence that wo
 
 ### The endpoint was unavailable
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 What failure did you see, and what message did you keep?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 An unreachable model is a failure in its own right. Which of the options exist for exactly that case?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Decide from the emulator baseline and the failure you saw, and say so in the record.
 
